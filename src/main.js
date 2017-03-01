@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './style.scss'
+// import 'vue-impression/dist/styles/index.scss'
 
 // 全局配置
 // Vue 启动时阻止提示
