@@ -37,16 +37,19 @@ module.exports = {
         }
       },
       {
+        // vue 文件， 处理vue模板，加载各种 css及预处理语言，自动前缀等
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
       {
+        // js文件 需要 转换 ES6语法
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
       },
       {
+        // 图片
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         query: {
@@ -55,6 +58,7 @@ module.exports = {
         }
       },
       {
+        // 字体文件
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         query: {

@@ -32,7 +32,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<!-- scoped 代表内部样式，不会影响全局 -->
+<style lang="scss" scoped>
 h1, h2 {
   font-weight: normal;
 }
