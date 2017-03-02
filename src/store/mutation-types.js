@@ -11,3 +11,5 @@ export const MINUS = 'SQUARE_MINUS'
 
 // search
 export const SEARCH_BOOK_QUERY = 'SEARCH_BOOK_QUERY'
+
+export const SEARCHURL = '/v2/book/search'

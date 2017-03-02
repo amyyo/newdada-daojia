@@ -14,26 +14,26 @@
 </template>
 
 <script>
-    import { mapState, mapActions } from 'vuex';
-    import BookCard from '../components/BookCard';
-    export default {
-        components: {
-            BookCard,
-        },
-        computed: {
-            ...mapState({
-                books: state => state.search.books,
-            }),
-        },
-        methods: {
-            ...mapActions(['searchBook']),
-            searchBookHandle() {
-                let query = this.$refs.query.value;
-                this.searchBook(query);
-            },
-        },
-        mounted() {
-            this.searchBookHandle();
-        },
-    };
+  import { mapState, mapActions } from 'vuex'
+  import BookCard from '../components/BookCard'
+  export default {
+    components: {
+      BookCard
+    },
+    computed: {
+      ...mapState({
+        books: state => state.books
+      })
+    },
+    methods: {
+      ...mapActions(['searchBook']),
+      searchBookHandle () {
+        let query = this.$refs.query.value
+        this.searchBook(query)
+      }
+    },
+    mounted () {
+      this.searchBookHandle()
+    }
+  }
 </script>

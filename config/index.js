@@ -33,6 +33,11 @@ module.exports = {
          target: 'http://testpdjm.jd.com/',
          secure: false,
          changeOrigin: true
+       },
+      '/v2/book/search': {
+         target: 'https://api.douban.com/',
+         secure: true,
+         changeOrigin: true
        }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

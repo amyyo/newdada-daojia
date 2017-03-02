@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import createLogger from 'vuex/dist/logger'
 
-import * as mutations from './mutations'
+import mutations from './mutations'
 import * as actions from './actions'
 import * as getters from './getters'
 import interceptors from './interceptors'
@@ -13,6 +13,8 @@ Vue.use(Vuex)
 const state = {
   msg: 'Welcome to your Vue.js app!',
   count: 0,
+  number: 0,
+  books: [],
   isLoading: false
 }
 

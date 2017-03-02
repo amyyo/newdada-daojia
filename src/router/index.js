@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello' // 等同于 '../components/Hello'
 import Button from '@/components/Button'
-import Home from '@/views/HomeView'
+import HomeView from '@/views/HomeView'
 import SearchView from '@/views/SearchView'
 import CounterView from '@/views/CounterView'
 import SquareView from '@/views/SquareView'
@@ -16,7 +16,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: HomeView
     },
     {
       path: '/counter',

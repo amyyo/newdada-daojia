@@ -19,7 +19,6 @@
                 <cell>
                     <btn theme="primary" size="sm" @click="plus"><icon name="plus" size="lg" /></btn>
                     <btn theme="secondary" size="sm" @click="minus"><icon name="minus" size="lg" /></btn>
-                    <btn theme="default" size="sm" slot="footer" @click="reset">RESET</btn>
                 </cell>
             </group>
         </flex-item>
@@ -27,19 +26,19 @@
 </template>
 
 <script>
-    import { mapState, mapActions, mapGetters } from 'vuex';
-    export default {
-        computed: {
-            ...mapState({
-                number: state => state.square.number,
-            }),
-            ...mapGetters(['square']),
-        },
-        methods: {
-            ...mapActions(['plus', 'minus', 'reset']),
-        },
-        mounted() {
-            console.log(this);
-        },
-    };
+  import { mapState, mapActions, mapGetters } from 'vuex'
+  export default {
+    computed: {
+      ...mapState({
+        number: state => state.number
+      }),
+      ...mapGetters(['square'])
+    },
+    methods: {
+      ...mapActions(['plus', 'minus'])
+    },
+    mounted () {
+      console.log(this)
+    }
+  }
 </script>

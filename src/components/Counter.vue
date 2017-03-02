@@ -18,13 +18,13 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            count: Number,
-            doubleCount: Number,
-            increment: Function,
-            decrement: Function,
-            reset: Function,
-        },
-    };
+  export default {
+    props: {
+      count: Number,
+      doubleCount: Number,
+      increment: Function,
+      decrement: Function,
+      reset: Function
+    }
+  }
 </script>

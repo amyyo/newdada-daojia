@@ -1,20 +1,22 @@
-export const increment = (state) => {
-  state.count++
-}
+import * as MutationTypes from '../mutation-types'
 
-let titles = [
-  'Welcome to your Vue.js app!',
-  'Hello Vue 2.0! ',
-  'Hello World! ',
-  'Hi JavaScript! ',
-  'Hi HTML5! '
-]
-
-export const randomTitle = (state) => {
-  let index = ~~(Math.random() * titles.length)
-  state.msg = titles[index]
-}
-
-export const loading = (state, isLoading) => {
-  state.isLoading = isLoading
+export default {
+  [MutationTypes.INCREMENT] (state) {
+    state.count++
+  },
+  [MutationTypes.DECREMENT] (state) {
+    state.count--
+  },
+  [MutationTypes.RESET] (state) {
+    state.count = 0
+  },
+  [MutationTypes.SEARCH_BOOK_QUERY] (state, content) {
+    state.books = content
+  },
+  [MutationTypes.PLUS] (state) {
+    state.number++
+  },
+  [MutationTypes.MINUS] (state) {
+    state.number--
+  }
 }

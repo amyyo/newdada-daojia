@@ -6,9 +6,9 @@
 </template>
 
 <script>
-    export default {
-        props: {
-            book: Object,
-        },
-    };
+  export default {
+    props: {
+      book: Object
+    }
+  }
 </script>

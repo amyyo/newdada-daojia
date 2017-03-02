@@ -19,20 +19,20 @@
 </template>
 
 <script>
-    import { mapState, mapActions, mapGetters } from 'vuex';
-    import Counter from '../components/Counter';
-    export default {
-        components: {
-            Counter,
-        },
-        computed: {
-            ...mapState({
-                count: state => state.count.count,
-            }),
-            ...mapGetters(['doubleCount']),
-        },
-        methods: {
-            ...mapActions(['increment', 'decrement', 'reset']),
-        },
-    };
+  import { mapState, mapActions, mapGetters } from 'vuex'
+  import Counter from '../components/Counter'
+  export default {
+    components: {
+      Counter
+    },
+    computed: {
+      ...mapState({
+        count: state => state.count
+      }),
+      ...mapGetters(['doubleCount'])
+    },
+    methods: {
+      ...mapActions(['increment', 'decrement', 'reset'])
+    }
+  }
 </script>
