@@ -1,6 +1,9 @@
 import * as MutationTypes from '../mutation-types'
 
 export default {
+  [MutationTypes.LOADING] (state, isLoading) {
+    state.isLoading = isLoading
+  },
   [MutationTypes.INCREMENT] (state) {
     state.count++
   },

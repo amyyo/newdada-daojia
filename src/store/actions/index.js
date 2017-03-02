@@ -5,7 +5,7 @@ import Vue from 'vue'
 // 状态事件传参数
 export const randomTitle = ({ commit }, params) => commit('randomTitle', params)
 
-export const loading = ({ commit }, payload) => commit('loading', payload)
+export const loading = ({ commit }, payload) => commit(MutationTypes.LOADING, payload)
 
 // reset
 export const reset = ({ commit }) => commit(MutationTypes.RESET)

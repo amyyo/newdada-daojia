@@ -1,5 +1,6 @@
 // common
 export const RESET = 'COMMON_RESET'
+export const LOADING = 'LOADING'
 
  // count
 export const INCREMENT = 'COUNT_INCREMENT'
