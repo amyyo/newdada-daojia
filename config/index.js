@@ -23,11 +23,18 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
-    autoOpenBrowser: true,
+    port: 8080, // 代理端口
+    autoOpenBrowser: true, // 自动打开浏览器
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // 配置代理
+    proxyTable: {
+      '/client': {
+         target: 'http://testpdjm.jd.com/',
+         secure: false,
+         changeOrigin: true
+       }
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
