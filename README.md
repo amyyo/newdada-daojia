@@ -1,6 +1,7 @@
 # newdada-daojia
 
-> A Vue.js project
+> A Vue.js project,
+> 到家体验版开发
 
 ## Build Setup
 
