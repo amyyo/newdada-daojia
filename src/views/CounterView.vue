@@ -26,13 +26,13 @@
       Counter
     },
     computed: {
-      ...mapState({
+      ...mapState({ // 获取store状态
         count: state => state.count
       }),
-      ...mapGetters(['doubleCount'])
+      ...mapGetters(['doubleCount']) // 另一种方式获取状态（经过二次处理）
     },
     methods: {
-      ...mapActions(['increment', 'decrement', 'reset'])
+      ...mapActions(['increment', 'decrement', 'reset']) // 触发状态事件
     }
   }
 </script>
